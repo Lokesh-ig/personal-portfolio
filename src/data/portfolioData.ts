@@ -27,7 +27,7 @@ export const PERSONAL_INFO = {
   githubUrl: 'https://github.com/Lokesh-ig?tab=repositories',
   
   // DIRECT DOWNLOAD RESUME PDF FILE:
-  resumePdfUrl: '/Lokesh_Resume.pdf',
+  resumePdfUrl: '/Lokesh_P_Resume.pdf',
   
   // PROFILE HEADSHOT IMAGE:
   profileImageUrl: '/Lokesh_P_Profile.jpg',

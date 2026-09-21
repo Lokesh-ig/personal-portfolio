@@ -130,6 +130,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             <a
               href={PERSONAL_INFO.resumePdfUrl}
               download="Lokesh_P_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => onOpenResume?.()}
               className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 px-6 py-3.5 text-sm font-semibold text-slate-200 bg-slate-900/90 hover:bg-slate-800/90 border border-slate-700/80 hover:border-cyan-500/50 rounded-xl transition-all duration-200 focus:outline-none"
             >

@@ -25,6 +25,8 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             <a
               href={PERSONAL_INFO.resumePdfUrl}
               download="Lokesh_P_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 px-4 py-1.5 text-xs font-semibold text-white bg-gradient-to-r from-cyan-600 to-indigo-600 hover:from-cyan-500 hover:to-indigo-500 rounded-lg transition-colors shadow-md shadow-cyan-500/20"
             >
               <Download className="w-3.5 h-3.5" />
