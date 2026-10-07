@@ -36,7 +36,7 @@ export const PERSONAL_INFO = {
 };
 
 export const QUICK_STATS = [
-  { label: 'AI / Full-Stack Projects', value: '2+', subtext: 'Built & Deployed' },
+  { label: 'AI / Full-Stack Projects', value: '3+', subtext: 'Built & Deployed' },
   { label: 'Internship Experiences', value: '2+', subtext: 'Full Stack & AI' },
   { label: 'Primary Language', value: 'Python', subtext: 'Core Stack' },
   { label: 'Core Focus', value: 'AI + Web', subtext: 'Practical Apps' }
@@ -153,6 +153,90 @@ export const EXPERIENCES: ExperienceItem[] = [
 // PROJECTS DATA & REPOSITORY URLS
 // =============================================================
 export const PROJECTS: Project[] = [
+  {
+    id: 'taskflow',
+    title: 'TaskFlow',
+    subtitle: 'Full-Stack Task & Workflow Management System',
+    category: 'Full-Stack',
+    featured: true,
+    description:
+      'Engineered a full-stack task & workflow management web application using Django 5, Bootstrap 5, and cloud-hosted MySQL on Aiven Cloud.',
+    problem:
+      'Managing daily tasks, priorities, and internship deliverables manually leads to disorganization, missed deadlines, and inefficient tracking across personal and professional goals.',
+    solution:
+      'Engineered a full-stack web application connecting a responsive Bootstrap 5 frontend to a Django 5 backend and a cloud-hosted MySQL database (Aiven Cloud). Automatically categorizes, prioritizes, and filters tasks with real-time status analytics, persistent dark mode, and seamless active/completed task archiving.',
+    technologies: ['Python', 'Django 5', 'MySQL', 'SQLite3', 'Bootstrap 5', 'JavaScript', 'REST APIs', 'Render', 'Aiven Cloud'],
+    features: [
+      'Task creation, priority tagging, and category management',
+      'Real-time task status analytics dashboard',
+      'Persistent dark mode & responsive UI interface',
+      'Active/completed task archiving & search filter',
+      'Django 5 ORM & form processing validation',
+      'Cloud MySQL database hosting via Aiven Cloud'
+    ],
+    githubUrl: 'https://github.com/Lokesh-ig/CodSoft_To-Do-List_Application',
+    liveDemoUrl: 'https://codsoft-to-do-list-application.onrender.com/',
+    caseStudy: {
+      problem:
+        'Managing daily tasks, priorities, and internship deliverables manually leads to disorganization, missed deadlines, and inefficient tracking across personal and professional goals.',
+      approach:
+        'Built a modular full-stack architecture using Django 5 and Bootstrap 5. Integrated Django ORM with cloud-hosted MySQL database on Aiven Cloud, deployed on Render with automated environment configurations.',
+      architectureDescription:
+        'User submits task requests via Bootstrap 5 frontend; Django URL router passes request payload to Django ORM query engine, persisting state in Aiven Cloud MySQL database and updating real-time analytics UI dashboard.',
+      architectureSteps: [
+        {
+          step: 1,
+          title: 'User Task Submission & Filter',
+          description: 'User inputs task, priority level, and category tag via Bootstrap frontend.',
+          type: 'input'
+        },
+        {
+          step: 2,
+          title: 'Django Form & URL Router',
+          description: 'Validates request payload and routes request endpoints to views.',
+          type: 'service'
+        },
+        {
+          step: 3,
+          title: 'Django ORM & Query Engine',
+          description: 'Processes CRUD operations and executes task filtering logic.',
+          type: 'service'
+        },
+        {
+          step: 4,
+          title: 'Cloud MySQL Database Layer',
+          description: 'Aiven Cloud hosted database persists user records securely.',
+          type: 'model'
+        },
+        {
+          step: 5,
+          title: 'UI Dashboard & Analytics',
+          description: 'Renders completion statistics and task status queues in real time.',
+          type: 'output'
+        }
+      ],
+      technologiesUsed: [
+        { category: 'Frontend', stack: ['Bootstrap 5', 'JavaScript', 'HTML5', 'CSS3'] },
+        { category: 'Backend Engine', stack: ['Python 3.x', 'Django 5', 'Django ORM'] },
+        { category: 'Database & Cloud', stack: ['MySQL', 'Aiven Cloud', 'SQLite3'] },
+        { category: 'Deployment & Hosting', stack: ['Render', 'Gunicorn', 'Git'] }
+      ],
+      keyFeatures: [
+        'Task categorization and dynamic priority sorting (High, Medium, Low).',
+        'Real-time task completion statistics and analytics status dashboard.',
+        'Persistent dark/light theme toggle for enhanced accessibility.',
+        'Seamless active and completed task archiving with bulk actions.'
+      ],
+      challengesAndSolutions: [
+        {
+          challenge: 'Configuring secure, reliable database connectivity between Render cloud deployment and external Aiven MySQL cloud database.',
+          solution: 'Configured SSL certificate parameters and environment variable secrets inside Django settings.py for encrypted database connection pooling.'
+        }
+      ],
+      outcome:
+        'Successfully deployed a responsive, full-stack workflow and task management platform on Render with cloud-hosted MySQL storage.'
+    }
+  },
   {
     id: 'toxiguard',
     title: 'ToxiGuard',
