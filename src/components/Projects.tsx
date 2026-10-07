@@ -13,7 +13,7 @@ export const Projects: React.FC = () => {
   const filterRefs = useRef<{ [key: string]: HTMLButtonElement | null }>({});
   const [filterSliderStyle, setFilterSliderStyle] = useState({ left: 0, width: 0, opacity: 0 });
 
-  const categories = ['All', 'AI/ML', 'Full-Stack', 'NLP', 'Computer Vision'];
+  const categories = ['All', 'AI/ML', 'Full-Stack', 'NLP', 'Computer Vision', 'Python'];
 
   // Update animated sliding active pill for filter categories
   useEffect(() => {

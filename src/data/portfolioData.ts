@@ -533,6 +533,89 @@ export const PROJECTS: Project[] = [
       outcome:
         'Successfully deployed a responsive, full-stack workflow and task management platform on Render with cloud-hosted MySQL storage.'
     }
+  },
+  {
+    id: 'rps-championship',
+    title: 'RPS Championship',
+    subtitle: 'Multi-Platform Rock-Paper-Scissors Game System',
+    category: 'Python',
+    featured: false,
+    description:
+      'Engineered a cross-platform Rock-Paper-Scissors application featuring a Python Desktop GUI (Tkinter), Terminal CLI, and a responsive web app (HTML5/Tailwind/JS).',
+    problem:
+      'Standard simple mini-games often lack responsive multi-platform accessibility, real-time score analytics, multi-player pass-and-play support, and dynamic theme customization across desktop and web interfaces.',
+    solution:
+      'Engineered a cross-platform Rock-Paper-Scissors application featuring a Python Desktop GUI (Tkinter), Terminal CLI, and a responsive web app (HTML5/Tailwind/JS). Supports 1-Player (vs CPU) & 2-Player (Pass-and-Play) modes, real-time match history logging, Light/Dark themes, and instant outcome evaluation.',
+    technologies: ['Python 3', 'Tkinter GUI', 'HTML5', 'Tailwind CSS', 'JavaScript', 'REST & CLI', 'Git / GitHub', 'Netlify'],
+    features: [
+      '1-Player (vs CPU) & 2-Player (Pass-and-Play) game modes',
+      'Python Desktop GUI (Tkinter) & Web UI (HTML5/Tailwind)',
+      'Real-time score tracking & win streak analytics',
+      'Match history logging table & instant outcome evaluation',
+      'Light and Dark theme customization',
+      'Netlify live web deployment'
+    ],
+    githubUrl: 'https://github.com/Lokesh-ig/codsoft_taskno2_rock-paper-scissor-game',
+    liveDemoUrl: 'https://task-intern-project.netlify.app/',
+    caseStudy: {
+      problem:
+        'Standard simple mini-games often lack responsive multi-platform accessibility, real-time score analytics, multi-player pass-and-play support, and dynamic theme customization across desktop and web interfaces.',
+      approach:
+        'Designed a multi-interface architecture: Python Tkinter for native desktop GUI execution and HTML5/Tailwind CSS/JavaScript for responsive web deployment on Netlify.',
+      architectureDescription:
+        'User selects move (1P vs CPU or 2P Pass-and-Play); Choice Evaluation Rule Engine determines winner, updates Score Tracker & Win Streaks Engine, appends entry to Real-Time Match History table, and renders UI state on Desktop GUI or Netlify Web.',
+      architectureSteps: [
+        {
+          step: 1,
+          title: 'User Move Selection',
+          description: 'User inputs move choice (1P vs CPU or 2P Pass-and-Play mode).',
+          type: 'input'
+        },
+        {
+          step: 2,
+          title: 'Choice Evaluation Engine',
+          description: 'Evaluates move rules matrix and determines round outcome (Win/Loss/Draw).',
+          type: 'service'
+        },
+        {
+          step: 3,
+          title: 'Score & Streak Tracker',
+          description: 'Updates cumulative scores, win streaks, and player statistics.',
+          type: 'service'
+        },
+        {
+          step: 4,
+          title: 'Match History Table',
+          description: 'Appends round details, timestamp, and player moves to live history log.',
+          type: 'model'
+        },
+        {
+          step: 5,
+          title: 'Multi-Platform Render',
+          description: 'Renders updated state on Python Desktop GUI (Tkinter) or Netlify Web UI.',
+          type: 'output'
+        }
+      ],
+      technologiesUsed: [
+        { category: 'Frontend & Desktop GUI', stack: ['Python Tkinter', 'HTML5', 'Tailwind CSS', 'JavaScript'] },
+        { category: 'Logic & Engine', stack: ['Python 3.x', 'Random Module', 'JSON Storage'] },
+        { category: 'Hosting & Version Control', stack: ['Netlify', 'Git', 'GitHub'] }
+      ],
+      keyFeatures: [
+        '1-Player vs AI CPU and 2-Player Pass-and-Play game modes.',
+        'Real-time score tracking, win streak counters, and match history logs.',
+        'Cross-platform support across Python desktop GUI and Netlify web app.',
+        'Dynamic theme toggle (Light / Dark mode).'
+      ],
+      challengesAndSolutions: [
+        {
+          challenge: 'Maintaining identical game state rules and score calculation logic between Python desktop GUI and JavaScript web implementation.',
+          solution: 'Abstracted the core decision matrix into stateless rule evaluations and standardized event handlers across both platforms.'
+        }
+      ],
+      outcome:
+        'Delivered an engaging multi-platform Rock-Paper-Scissors gaming application deployed on Netlify with native Python desktop GUI support.'
+    }
   }
 ];
 

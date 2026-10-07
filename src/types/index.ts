@@ -31,7 +31,7 @@ export interface Project {
   title: string;
   subtitle: string;
   description: string;
-  category: 'AI/ML' | 'Full-Stack' | 'Computer Vision' | 'NLP';
+  category: 'AI/ML' | 'Full-Stack' | 'Computer Vision' | 'NLP' | 'Python';
   featured: boolean;
   problem: string;
   solution: string;
