@@ -738,6 +738,17 @@ export const CERTIFICATIONS: Certification[] = [
     description:
       'Completed full-stack engineering internship working on responsive frontend web components, Django backend integration, and REST APIs.',
     image: '/NovaSpark_Certificate.jpg'
+  },
+  {
+    id: 'cert-codsoft',
+    title: 'Python Programming Internship Certificate',
+    organization: 'CodSoft',
+    period: 'Oct 2026',
+    issuerLogoText: 'CodSoft',
+    credentialUrl: 'https://linkedin.com/in/lokesh-p-dev',
+    description:
+      'Successfully completed 4 weeks of Python Programming virtual internship at CodSoft (C.ID: dcb47e0), developing TaskFlow management system, RPS Championship game, and Contact Book application.',
+    image: '/CodSoft_Certificate.png'
   }
 ];
 
