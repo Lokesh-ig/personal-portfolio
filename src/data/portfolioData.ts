@@ -616,6 +616,89 @@ export const PROJECTS: Project[] = [
       outcome:
         'Delivered an engaging multi-platform Rock-Paper-Scissors gaming application deployed on Netlify with native Python desktop GUI support.'
     }
+  },
+  {
+    id: 'contact-book',
+    title: 'Contact Book',
+    subtitle: 'Smart Multi-Platform Contact Directory System',
+    category: 'Python',
+    featured: false,
+    description:
+      'Engineered a cross-platform Contact Book application featuring a Python Desktop GUI (Tkinter), Terminal CLI, Flask Web API, and SQLite persistence.',
+    problem:
+      'Standard contact management scripts often lack persistent desktop & cloud storage, real-time search, interactive CRUD operations, dark/light theme customization, and cross-platform accessibility.',
+    solution:
+      'Engineered a cross-platform Contact Book featuring a Python Desktop GUI (Tkinter), Terminal CLI, Flask Web API, and SQLite persistence. Supports instant search filtering by name/phone, full CRUD operations, input validation, Light/Dark themes, and Render Cloud deployment.',
+    technologies: ['Python 3', 'Tkinter GUI', 'Flask Web API', 'SQLite3 DB', 'HTML5 / CSS3', 'REST & CLI', 'Git / GitHub', 'Render Cloud'],
+    features: [
+      'Instant real-time search filtering by name or phone number',
+      'Full CRUD (Create, Read, Update, Delete) contact operations',
+      'Input validation for email formatting and phone number structures',
+      'Python Desktop GUI (Tkinter), Terminal CLI, and Flask Web API',
+      'Light and Dark theme customization',
+      'Render Cloud live web deployment'
+    ],
+    githubUrl: 'https://github.com/Lokesh-ig/CodSoft-Contact-Book',
+    liveDemoUrl: 'https://contact-book-joew.onrender.com',
+    caseStudy: {
+      problem:
+        'Standard contact management scripts often lack persistent desktop & cloud storage, real-time search, interactive CRUD operations, dark/light theme customization, and cross-platform accessibility.',
+      approach:
+        'Designed a multi-interface architecture combining Python Tkinter for native desktop execution with a Flask Web API and SQLite3 database deployed on Render Cloud.',
+      architectureDescription:
+        'User inputs query or contact action; Validation Engine checks email/phone formatting, SQLite3 executes CRUD operation, Real-Time Sync updates contact lists, and state renders on Desktop GUI or Render Web.',
+      architectureSteps: [
+        {
+          step: 1,
+          title: 'User Input & Search Query',
+          description: 'User inputs contact fields or live search query (Name / Phone).',
+          type: 'input'
+        },
+        {
+          step: 2,
+          title: 'Validation Engine',
+          description: 'Validates email formatting and phone number structures.',
+          type: 'service'
+        },
+        {
+          step: 3,
+          title: 'SQLite3 Database Execution',
+          description: 'Executes CRUD operations against persistent SQLite database.',
+          type: 'service'
+        },
+        {
+          step: 4,
+          title: 'Real-Time Contact Sync',
+          description: 'Updates contact list and detail views in real time.',
+          type: 'model'
+        },
+        {
+          step: 5,
+          title: 'Multi-Platform Render',
+          description: 'Renders updated state on Python Desktop GUI (Tkinter) or Render Web.',
+          type: 'output'
+        }
+      ],
+      technologiesUsed: [
+        { category: 'Frontend & Desktop GUI', stack: ['Python Tkinter', 'HTML5', 'CSS3', 'JavaScript'] },
+        { category: 'Backend Engine & DB', stack: ['Python 3.x', 'Flask API', 'SQLite3'] },
+        { category: 'Deployment & Hosting', stack: ['Render Cloud', 'Gunicorn', 'Git', 'GitHub'] }
+      ],
+      keyFeatures: [
+        'Real-time search filtering by contact name or phone number.',
+        'Full CRUD capabilities with input validation safeguards.',
+        'Cross-platform execution across Python Tkinter desktop GUI and Render web app.',
+        'Persistent SQLite database storage.'
+      ],
+      challengesAndSolutions: [
+        {
+          challenge: 'Ensuring instant UI list updating without freezing the desktop GUI or web view during database writes.',
+          solution: 'Optimized SQLite query indexing and lightweight state syncing between data models and UI views.'
+        }
+      ],
+      outcome:
+        'Successfully built and deployed a multi-platform contact management system on Render Cloud with desktop Tkinter support.'
+    }
   }
 ];
 
