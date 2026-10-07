@@ -39,6 +39,7 @@ export interface Project {
   technologies: string[];
   githubUrl?: string;
   liveDemoUrl?: string;
+  logoUrl?: string;
   caseStudy: CaseStudyData;
 }
 

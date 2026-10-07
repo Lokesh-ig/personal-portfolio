@@ -640,6 +640,7 @@ export const PROJECTS: Project[] = [
     ],
     githubUrl: 'https://github.com/Lokesh-ig/CodSoft-Contact-Book',
     liveDemoUrl: 'https://contact-book-joew.onrender.com',
+    logoUrl: '/contact-book-logo.png',
     caseStudy: {
       problem:
         'Standard contact management scripts often lack persistent desktop & cloud storage, real-time search, interactive CRUD operations, dark/light theme customization, and cross-platform accessibility.',

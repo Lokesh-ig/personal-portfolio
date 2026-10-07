@@ -109,13 +109,22 @@ export const Projects: React.FC = () => {
                     </div>
 
                     {/* Title & Subtitle */}
-                    <div>
-                      <h3 className="text-2xl sm:text-3xl font-bold text-white font-mono tracking-tight">
-                        {project.title}
-                      </h3>
-                      <p className="text-sm font-semibold text-cyan-300 font-mono mt-1">
-                        {project.subtitle}
-                      </p>
+                    <div className="flex items-center space-x-3">
+                      {project.logoUrl && (
+                        <img
+                          src={project.logoUrl}
+                          alt={`${project.title} Logo`}
+                          className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl object-contain bg-slate-900/90 border border-cyan-500/40 p-1.5 shrink-0 shadow-md shadow-cyan-500/10"
+                        />
+                      )}
+                      <div>
+                        <h3 className="text-2xl sm:text-3xl font-bold text-white font-mono tracking-tight">
+                          {project.title}
+                        </h3>
+                        <p className="text-sm font-semibold text-cyan-300 font-mono mt-0.5">
+                          {project.subtitle}
+                        </p>
+                      </div>
                     </div>
 
                     {/* Problem & Solution Summary */}
