@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
   <defs>
-    <!-- Background Gradient -->
+    <!-- Background Gradient - Portfolio Cyan & Indigo -->
     <linearGradient id="bgGradOnly" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6366f1" />
-      <stop offset="50%" stop-color="#a855f7" />
-      <stop offset="100%" stop-color="#ec4899" />
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#6366f1" />
     </linearGradient>
 
-    <!-- Inner Bubble Gradient -->
+    <!-- Inner Bubble Gradient - Deep Dark Slate & Navy -->
     <linearGradient id="bubbleGradOnly" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4c1d95" />
-      <stop offset="100%" stop-color="#be123c" />
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
     </linearGradient>
   </defs>
 
@@ -18,8 +18,8 @@
   <rect x="0" y="0" width="100" height="100" rx="30" fill="url(#bgGradOnly)" />
 
   <!-- Speech Bubble Body -->
-  <path d="M50 20 C33.43 20 20 33.43 20 50 C20 66.57 33.43 80 50 80 C54.55 80 58.85 78.98 62.69 77.16 L81 81 L75.16 67.69 C78.25 62.77 80 57.14 80 50 C80 33.43 66.57 20 50 20 Z" fill="url(#bubbleGradOnly)" />
+  <path d="M50 20 C33.43 20 20 33.43 20 50 C20 66.57 33.43 80 50 80 C54.55 80 58.85 78.98 62.69 77.16 L81 81 L75.16 67.69 C78.25 62.77 80 57.14 80 50 C80 33.43 66.57 20 50 20 Z" fill="url(#bubbleGradOnly)" stroke="rgba(6, 182, 212, 0.4)" stroke-width="2" />
 
-  <!-- Yellow Lightning Bolt -->
-  <path d="M52 35 L38 55 H48 L46 75 L62 50 H52 L54 35 Z" fill="#fef08a" />
+  <!-- Glowing Cyan Lightning Bolt -->
+  <path d="M52 35 L38 55 H48 L46 75 L62 50 H52 L54 35 Z" fill="#22d3ee" />
 </svg>
