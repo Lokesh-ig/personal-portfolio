@@ -176,6 +176,7 @@ export const PROJECTS: Project[] = [
     ],
     githubUrl: 'https://github.com/Lokesh-ig/Comment-Moderation_System',
     liveDemoUrl: 'https://comment-moderation-system-delta.vercel.app',
+    logoUrl: '/toxiguard-logo.svg',
     caseStudy: {
       problem:
         'Online communities face continuous risks from toxic, aggressive, or hateful comments. Moderating content manually creates severe human resource bottlenecks and exposes human moderators to high volumes of abusive text.',
@@ -271,6 +272,7 @@ export const PROJECTS: Project[] = [
     ],
     githubUrl: 'https://github.com/Lokesh-ig/employee-onboarding-automation',
     liveDemoUrl: 'https://onboarding-system-demo.vercel.app',
+    logoUrl: '/employee-onboarding-logo.svg',
     caseStudy: {
       problem:
         'New employee onboarding processes in organizations are often fragmented across email threads and paper forms, causing lost documents and delayed compliance verification.',
@@ -361,6 +363,7 @@ export const PROJECTS: Project[] = [
     ],
     githubUrl: 'https://github.com/Lokesh-ig/CodeAlpha_FAQ_Chatbot',
     liveDemoUrl: 'https://codealpha-faq-chatbot-xf7i.onrender.com',
+    logoUrl: '/banking-faq-logo.svg',
     caseStudy: {
       problem:
         'Traditional keyword-matching chatbots fail when users phrase questions using different synonyms or structural patterns.',
@@ -417,6 +420,7 @@ export const PROJECTS: Project[] = [
     ],
     githubUrl: 'https://github.com/Lokesh-ig/CodeAlpha_Object_Detection_Tracking',
     liveDemoUrl: 'https://codealpha-object-detection-tracking-1urc.onrender.com',
+    logoUrl: '/object-detection-logo.svg',
     caseStudy: {
       problem:
         'Tracking moving targets in crowded video streams requires both rapid object detection and spatial temporal identity association.',
@@ -473,6 +477,7 @@ export const PROJECTS: Project[] = [
     ],
     githubUrl: 'https://github.com/Lokesh-ig/CodSoft_To-Do-List_Application',
     liveDemoUrl: 'https://codsoft-to-do-list-application.onrender.com/',
+    logoUrl: '/taskflow-logo.svg',
     caseStudy: {
       problem:
         'Managing daily tasks, priorities, and internship deliverables manually leads to disorganization, missed deadlines, and inefficient tracking across personal and professional goals.',
@@ -557,6 +562,7 @@ export const PROJECTS: Project[] = [
     ],
     githubUrl: 'https://github.com/Lokesh-ig/codsoft_taskno2_rock-paper-scissor-game',
     liveDemoUrl: 'https://task-intern-project.netlify.app/',
+    logoUrl: '/rps-logo.svg',
     caseStudy: {
       problem:
         'Standard simple mini-games often lack responsive multi-platform accessibility, real-time score analytics, multi-player pass-and-play support, and dynamic theme customization across desktop and web interfaces.',

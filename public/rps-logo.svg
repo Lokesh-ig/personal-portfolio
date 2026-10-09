@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bg-grad-rps" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#451a03"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="icon-grad-rps" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="22" fill="url(#bg-grad-rps)" stroke="rgba(251, 191, 36, 0.4)" stroke-width="2"/>
+  <!-- Game Controller & Rock Scissors Icon -->
+  <path d="M30 40 H70 C76 40 80 44 80 50 V60 C80 66 74 72 68 72 C64 72 60 68 56 64 H44 C40 68 36 72 32 72 C26 72 20 66 20 60 V50 C20 44 24 40 30 40 Z" fill="none" stroke="url(#icon-grad-rps)" stroke-width="4"/>
+  <!-- D-Pad -->
+  <path d="M32 48 V58 M27 53 H37" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+  <!-- Action Buttons -->
+  <circle cx="64" cy="50" r="2.5" fill="#06b6d4"/>
+  <circle cx="70" cy="56" r="2.5" fill="#fbbf24"/>
+  <circle cx="58" cy="56" r="2.5" fill="#a855f7"/>
+  <circle cx="64" cy="62" r="2.5" fill="#ef4444"/>
+</svg>

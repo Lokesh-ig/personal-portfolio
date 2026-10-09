@@ -19,6 +19,13 @@ export const ProjectCaseStudyModal: React.FC<ProjectCaseStudyModalProps> = ({ pr
         {/* Modal Top Header */}
         <div className="flex items-center justify-between px-6 py-4 bg-[#0b0f17]/95 border-b border-slate-800">
           <div className="flex items-center space-x-3">
+            {project.logoUrl && (
+              <img
+                src={project.logoUrl}
+                alt={`${project.title} Logo`}
+                className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg object-contain bg-slate-900/90 border border-cyan-500/40 p-1 shrink-0"
+              />
+            )}
             <span className="text-xs font-mono px-2.5 py-1 rounded bg-cyan-950 text-cyan-400 border border-cyan-800">
               {project.category}
             </span>
