@@ -13,19 +13,27 @@ import { DeveloperApproach } from './components/DeveloperApproach';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { ResumeModal } from './components/ResumeModal';
+import { QRCodeModal } from './components/QRCodeModal';
 
 export function App() {
   const [resumeModalOpen, setResumeModalOpen] = useState(false);
+  const [qrModalOpen, setQrModalOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-[#0b0f17] text-slate-100 font-sans selection:bg-cyan-500/30 selection:text-cyan-200">
       {/* Sticky Navigation Bar */}
-      <Navbar onOpenResume={() => setResumeModalOpen(true)} />
+      <Navbar
+        onOpenResume={() => setResumeModalOpen(true)}
+        onOpenQR={() => setQrModalOpen(true)}
+      />
 
       {/* Main Content Sections */}
       <main>
         {/* Hero Section */}
-        <Hero onOpenResume={() => setResumeModalOpen(true)} />
+        <Hero
+          onOpenResume={() => setResumeModalOpen(true)}
+          onOpenQR={() => setQrModalOpen(true)}
+        />
 
         {/* Quick Stats Strip */}
         <QuickStats />
@@ -55,16 +63,22 @@ export function App() {
         <DeveloperApproach />
 
         {/* Contact Section */}
-        <Contact />
+        <Contact onOpenQR={() => setQrModalOpen(true)} />
       </main>
 
       {/* Footer */}
-      <Footer />
+      <Footer onOpenQR={() => setQrModalOpen(true)} />
 
       {/* Interactive Resume Modal */}
       <ResumeModal
         isOpen={resumeModalOpen}
         onClose={() => setResumeModalOpen(false)}
+      />
+
+      {/* Interactive Portfolio QR Code Modal */}
+      <QRCodeModal
+        isOpen={qrModalOpen}
+        onClose={() => setQrModalOpen(false)}
       />
     </div>
   );

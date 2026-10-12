@@ -1,9 +1,13 @@
 import React from 'react';
 import { PERSONAL_INFO } from '../data/portfolioData';
-import { ArrowUp, Mail } from 'lucide-react';
+import { ArrowUp, Mail, QrCode } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './SocialIcons';
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+  onOpenQR?: () => void;
+}
+
+export const Footer: React.FC<FooterProps> = ({ onOpenQR }) => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -97,6 +101,14 @@ export const Footer: React.FC = () => {
                 >
                   <Mail className="w-4 h-4" />
                 </a>
+                <button
+                  onClick={onOpenQR}
+                  className="p-2.5 bg-slate-900 border border-slate-800 hover:border-cyan-500/50 rounded-lg text-slate-300 hover:text-cyan-400 transition-colors"
+                  aria-label="Scan Portfolio QR Code"
+                  title="Scan QR Code to view on mobile"
+                >
+                  <QrCode className="w-4 h-4" />
+                </button>
               </div>
             </div>
 

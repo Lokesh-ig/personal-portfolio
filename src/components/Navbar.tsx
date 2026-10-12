@@ -1,13 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Menu, X, FileText, Send } from 'lucide-react';
+import { Menu, X, FileText, Send, QrCode } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { GithubIcon } from './SocialIcons';
 
 interface NavbarProps {
   onOpenResume: () => void;
+  onOpenQR?: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
+export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenQR }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -204,6 +205,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
               <span>View Resume</span>
             </button>
 
+            <button
+              onClick={onOpenQR}
+              className="inline-flex items-center space-x-1.5 px-3 py-2 text-xs font-semibold text-slate-200 hover:text-white bg-slate-800/80 hover:bg-slate-700/80 border border-slate-700/80 rounded-lg transition-all duration-200 hover:border-cyan-500/50 shadow-sm"
+              aria-label="View QR Code"
+              title="Scan QR Code to open on mobile"
+            >
+              <QrCode className="w-3.5 h-3.5 text-cyan-400" />
+              <span>QR Code</span>
+            </button>
+
             <a
               href="#contact"
               onClick={(e) => handleNavClick(e, '#contact')}
@@ -231,6 +242,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
               title="View Resume"
             >
               <FileText className="w-4 h-4" />
+            </button>
+            <button
+              onClick={onOpenQR}
+              className="p-2 text-cyan-400 bg-slate-900 border border-slate-800 rounded-lg"
+              title="Portfolio QR Code"
+            >
+              <QrCode className="w-4 h-4" />
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -278,6 +296,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
             >
               <FileText className="w-4 h-4 text-cyan-400" />
               <span>View Resume</span>
+            </button>
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onOpenQR?.();
+              }}
+              className="w-full flex items-center justify-center space-x-2 px-4 py-2.5 text-sm font-semibold text-slate-200 bg-slate-800 border border-slate-700 rounded-lg"
+            >
+              <QrCode className="w-4 h-4 text-cyan-400" />
+              <span>Share / QR Code</span>
             </button>
             <a
               href="#contact"

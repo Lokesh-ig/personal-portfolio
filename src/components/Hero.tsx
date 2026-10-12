@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowRight, FileText, Mail, X } from 'lucide-react';
+import { ArrowRight, FileText, Mail, X, QrCode } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { GithubIcon, LinkedinIcon } from './SocialIcons';
 
 interface HeroProps {
   onOpenResume?: () => void;
+  onOpenQR?: () => void;
 }
 
 const ROLES = [
@@ -14,7 +15,7 @@ const ROLES = [
   'PYTHON DEVELOPER'
 ];
 
-export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
+export const Hero: React.FC<HeroProps> = ({ onOpenResume, onOpenQR }) => {
   const [roleIndex, setRoleIndex] = useState(0);
   const [currentRoleText, setCurrentRoleText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
@@ -171,6 +172,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
               >
                 <Mail className="w-4 h-4" />
               </a>
+
+              <button
+                onClick={onOpenQR}
+                className="p-2.5 bg-slate-900/90 hover:bg-slate-800 text-slate-300 hover:text-cyan-400 border border-slate-800 rounded-lg transition-colors"
+                aria-label="Portfolio QR Code"
+                title="Scan QR Code to view portfolio on mobile"
+              >
+                <QrCode className="w-4 h-4" />
+              </button>
             </div>
           </div>
         </div>

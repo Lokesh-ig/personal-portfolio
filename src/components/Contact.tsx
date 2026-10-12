@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import { PERSONAL_INFO } from '../data/portfolioData';
-import { Mail, Phone, Send, Copy, Check, Sparkles, MessageSquare, AlertCircle } from 'lucide-react';
+import { Mail, Phone, Send, Copy, Check, Sparkles, MessageSquare, AlertCircle, QrCode, Smartphone, Download } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './SocialIcons';
 
-export const Contact: React.FC = () => {
+interface ContactProps {
+  onOpenQR?: () => void;
+}
+
+export const Contact: React.FC<ContactProps> = ({ onOpenQR }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -198,6 +202,61 @@ export const Contact: React.FC = () => {
                 </div>
                 <span className="text-xs text-cyan-400 font-mono">Follow →</span>
               </a>
+
+              {/* Mobile Portfolio QR Code Card */}
+              <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-cyan-500/50 transition-all space-y-3">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-2">
+                    <QrCode className="w-4 h-4 text-cyan-400" />
+                    <span className="text-xs font-bold text-white font-mono uppercase tracking-wider">
+                      Mobile Portfolio QR
+                    </span>
+                  </div>
+                  <span className="text-[10px] font-mono text-cyan-400 px-2 py-0.5 rounded-full bg-cyan-950/80 border border-cyan-800">
+                    SCAN TO VIEW
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div
+                    onClick={onOpenQR}
+                    className="p-2 bg-white rounded-lg shadow-md border border-slate-200 shrink-0 cursor-pointer hover:scale-105 transition-transform"
+                    title="Click to view full QR code"
+                  >
+                    <img
+                      src={PERSONAL_INFO.qrCodeUrl}
+                      alt="Portfolio QR Code"
+                      className="w-20 h-20 object-contain block"
+                    />
+                  </div>
+                  <div className="flex-1 space-y-2">
+                    <div className="flex items-center space-x-1.5 text-[11px] text-cyan-300 font-mono">
+                      <Smartphone className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                      <span>Scan with phone camera</span>
+                    </div>
+                    <p className="text-[11px] text-slate-400 leading-relaxed font-sans">
+                      Open and bookmark this portfolio instantly on your mobile device.
+                    </p>
+                    <div className="flex items-center space-x-2 pt-0.5">
+                      <button
+                        onClick={onOpenQR}
+                        className="inline-flex items-center space-x-1 px-2.5 py-1 text-[11px] font-mono text-cyan-300 hover:text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-md transition-colors"
+                      >
+                        <QrCode className="w-3 h-3 text-cyan-400" />
+                        <span>Enlarge</span>
+                      </button>
+                      <a
+                        href={PERSONAL_INFO.qrCodeUrl}
+                        download="Lokesh_Portfolio_QR.png"
+                        className="inline-flex items-center space-x-1 px-2.5 py-1 text-[11px] font-mono text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 rounded-md transition-colors"
+                      >
+                        <Download className="w-3 h-3 text-cyan-400" />
+                        <span>Save PNG</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 

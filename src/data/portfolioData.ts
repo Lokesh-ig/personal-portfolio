@@ -29,6 +29,11 @@ export const PERSONAL_INFO = {
   // DIRECT DOWNLOAD RESUME PDF FILE:
   resumePdfUrl: '/Lokesh_Resume.pdf',
   
+  // LIVE PORTFOLIO URL & QR CODE:
+  portfolioUrl: 'https://personal-portfolio-ten-mu-19.vercel.app',
+  qrCodeUrl: '/portfolio-qr.png',
+  qrCodeSvgUrl: '/portfolio-qr.svg',
+  
   // PROFILE HEADSHOT IMAGE:
   profileImageUrl: '/Lokesh_P_Profile.jpg',
   
