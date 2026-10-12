@@ -129,7 +129,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
 
             <a
               href={PERSONAL_INFO.resumePdfUrl}
-              download="Lokesh_P_Resume.pdf"
+              download="Lokesh_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => onOpenResume?.()}

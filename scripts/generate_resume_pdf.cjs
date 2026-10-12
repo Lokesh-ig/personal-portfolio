@@ -7,12 +7,13 @@ if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
 }
 
-const outputPath = path.join(outputDir, 'Lokesh_P_Resume.pdf');
+const outputPath = path.join(outputDir, 'Lokesh_Resume.pdf');
+const legacyOutputPath = path.join(outputDir, 'Lokesh_P_Resume.pdf');
 const doc = new PDFDocument({
   size: 'A4', // 595.28 x 841.89
   margin: 36, // clean margins
   info: {
-    Title: 'Lokesh P - Resume',
+    Title: 'Lokesh - Resume',
     Author: 'Lokesh P'
   }
 });
@@ -206,5 +207,6 @@ doc.fillColor(linkBlue).text('personal-portfolio-ten-mu-19.vercel.app', {
 doc.end();
 
 stream.on('finish', () => {
-  console.log('Successfully generated full-page Lokesh_P_Resume.pdf matching user format');
+  fs.copyFileSync(outputPath, legacyOutputPath);
+  console.log('Successfully generated Lokesh_Resume.pdf (and mirrored to Lokesh_P_Resume.pdf)');
 });
