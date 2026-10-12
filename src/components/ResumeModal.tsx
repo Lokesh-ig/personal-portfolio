@@ -42,75 +42,84 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
           </div>
         </div>
 
-        {/* Paper Resume View - 100% Matching Screenshot Layout */}
+        {/* Paper Resume View - 100% Matching Uploaded PDF Layout */}
         <div className="p-4 sm:p-8 overflow-y-auto bg-slate-950 flex-1">
-          <div className="max-w-3xl mx-auto bg-white text-gray-900 p-6 sm:p-10 rounded-xl shadow-2xl space-y-5 font-sans leading-relaxed text-xs border border-gray-200">
+          <div className="max-w-3xl mx-auto bg-white text-gray-900 p-6 sm:p-10 rounded-xl shadow-2xl space-y-4 font-sans leading-relaxed text-xs border border-gray-200">
             {/* Document Header */}
-            <div className="text-center pb-3 border-b-2 border-blue-900 space-y-1">
-              <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-blue-950 font-mono uppercase">
+            <div className="text-center pb-2.5 border-b-2 border-gray-900 space-y-1">
+              <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 font-sans uppercase">
                 LOKESH P
               </h1>
-              <p className="text-[11px] sm:text-xs text-gray-700 font-medium">
-                +91 93420 30354 &nbsp;|&nbsp; lokesh2005lokesh15@gmail.com &nbsp;|&nbsp; linkedin.com/in/lokesh-p-dev
+              <p className="text-[11px] sm:text-xs text-gray-800 font-normal">
+                +91 93420 30354 &nbsp;|&nbsp;{' '}
+                <a href="mailto:lokesh2005lokesh15@gmail.com" className="text-gray-800 hover:underline">
+                  lokesh2005lokesh15@gmail.com
+                </a>{' '}
+                &nbsp;|&nbsp;{' '}
+                <a
+                  href="https://linkedin.com/in/lokesh-p-dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-700 hover:underline"
+                >
+                  linkedin.com/in/lokesh-p-dev
+                </a>{' '}
+                &nbsp;|&nbsp;{' '}
+                <a
+                  href="https://github.com/Lokesh-ig"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-700 hover:underline"
+                >
+                  Lokesh-ig (Lokesh P)
+                </a>
               </p>
             </div>
 
             {/* Professional Summary */}
             <div className="space-y-1">
-              <h2 className="text-xs font-bold text-blue-900 uppercase tracking-wide border-b border-blue-900 pb-0.5">
+              <h2 className="text-xs font-bold text-gray-900 uppercase tracking-wide border-b border-gray-900 pb-0.5">
                 PROFESSIONAL SUMMARY
               </h2>
-              <p className="text-[11.5px] text-gray-800 leading-normal pt-1 text-justify">
-                I am a B.E Computer Science and Engineering graduate with hands-on experience in full-stack web development (Django, JavaScript), Python programming, SQL databases, and machine learning / NLP (BERT, Scikit-learn). Looking for an entry-level Software Developer role to design, build, and deploy efficient, scalable, and user-focused applications.
+              <p className="text-[11.5px] text-gray-800 leading-normal pt-1 text-left">
+                Computer Science and Engineering graduate with hands-on experience in AI-integrated full-stack development and machine learning techniques, including NLP, BERT, and Scikit-learn. Seeking an entry-level Software Developer role to apply my technical skills and contribute to building efficient, scalable applications.
               </p>
             </div>
 
-              {/* Internship */}
-              <div className="space-y-3">
-                <h2 className="text-xs font-bold text-blue-900 uppercase tracking-wide border-b border-blue-900 pb-0.5">
-                  INTERNSHIP
-                </h2>
+            {/* Internship */}
+            <div className="space-y-2.5">
+              <h2 className="text-xs font-bold text-gray-900 uppercase tracking-wide border-b border-gray-900 pb-0.5">
+                INTERNSHIP
+              </h2>
 
-                {/* Internship 1: CodSoft */}
-                <div className="space-y-1">
-                  <div className="flex flex-col sm:flex-row justify-between text-xs font-bold text-gray-900">
-                    <span>Python Programming Intern <span className="font-semibold text-gray-800">— CodSoft</span></span>
-                    <span className="text-gray-600 font-normal text-[11px]">Sep 2026 – Oct 2026</span>
-                  </div>
-                  <ul className="list-disc list-inside space-y-0.5 text-[11px] text-gray-800 pl-1">
-                    <li>Developed Python applications including a To-Do List task manager, Rock-Paper-Scissors game, and Contact Book application.</li>
-                    <li>Strengthened core programming, application development, and interactive software skills.</li>
-                  </ul>
+              {/* Internship 1: Nova Spark Hub */}
+              <div className="space-y-0.5">
+                <div className="flex flex-col sm:flex-row justify-between text-xs font-bold text-gray-900">
+                  <span>Full Stack Development Intern <span className="font-semibold text-gray-800">— Nova Spark Hub</span></span>
+                  <span className="text-gray-800 font-normal text-[11px]">Jul 2025 – Aug 2025</span>
                 </div>
-
-                {/* Internship 2: CodeAlpha */}
-                <div className="space-y-1">
-                  <div className="flex flex-col sm:flex-row justify-between text-xs font-bold text-gray-900">
-                    <span>Artificial Intelligence Intern <span className="font-semibold text-gray-800">— CodeAlpha</span></span>
-                    <span className="text-gray-600 font-normal text-[11px]">Aug 2026 – Sep 2026</span>
-                  </div>
-                  <ul className="list-disc list-inside space-y-0.5 text-[11px] text-gray-800 pl-1">
-                    <li>Developed two AI-based applications: a Banking FAQ Chatbot using NLP, TF-IDF, Cosine Similarity, and Flask, a Real-Time Object Detection & Tracking System using YOLO, OpenCV, and Deep SORT.</li>
-                    <li>Gained practical experience in python, Machine Learning, Natural Language Processing, Computer Vision, API development, and real-world AI application development.</li>
-                  </ul>
-                </div>
-
-                {/* Internship 3: Nova Spark Hub */}
-                <div className="space-y-1">
-                  <div className="flex flex-col sm:flex-row justify-between text-xs font-bold text-gray-900">
-                    <span>Full Stack Development Intern <span className="font-semibold text-gray-800">— Nova Spark Hub</span></span>
-                    <span className="text-gray-600 font-normal text-[11px]">Jul 2025 – Aug 2025</span>
-                  </div>
-                  <ul className="list-disc list-inside space-y-0.5 text-[11px] text-gray-800 pl-1">
-                    <li>Contributed to full-stack web development tasks, gaining hands-on experience with frontend and backend integration.</li>
-                    <li>Built and tested responsive UI components as part of a collaborative development team.</li>
-                  </ul>
-                </div>
+                <ul className="list-disc list-inside space-y-0.5 text-[11px] text-gray-800 pl-1">
+                  <li>Contributed to full-stack web development tasks, gaining hands-on experience with frontend and backend integration.</li>
+                  <li>Built and tested responsive UI components as part of a collaborative development team.</li>
+                </ul>
               </div>
+
+              {/* Internship 2: CodeAlpha */}
+              <div className="space-y-0.5">
+                <div className="flex flex-col sm:flex-row justify-between text-xs font-bold text-gray-900">
+                  <span>Artificial Intelligence Intern <span className="font-semibold text-gray-800">— CodeAlpha</span></span>
+                  <span className="text-gray-800 font-normal text-[11px]">Aug 2026 – Sep 2026</span>
+                </div>
+                <ul className="list-disc list-inside space-y-0.5 text-[11px] text-gray-800 pl-1">
+                  <li>Developed two AI-based applications: a Banking FAQ Chatbot using NLP, TF-IDF, Cosine Similarity, and Flask, a Real-Time Object Detection & Tracking System using YOLO, OpenCV, and Deep SORT.</li>
+                  <li>Gained practical experience in python, Machine Learning, Natural Language Processing, Computer Vision, API development, and real-world AI application development.</li>
+                </ul>
+              </div>
+            </div>
 
             {/* Technical Skills */}
             <div className="space-y-1">
-              <h2 className="text-xs font-bold text-blue-900 uppercase tracking-wide border-b border-blue-900 pb-0.5">
+              <h2 className="text-xs font-bold text-gray-900 uppercase tracking-wide border-b border-gray-900 pb-0.5">
                 TECHNICAL SKILLS
               </h2>
               <ul className="list-disc list-inside space-y-0.5 text-[11px] text-gray-800 pt-1 pl-1">
@@ -118,21 +127,20 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                 <li><strong>Web Development:</strong> HTML5, CSS3, Django, REST APIs</li>
                 <li><strong>Machine Learning & NLP:</strong> BERT, Scikit-learn, Text Classification, Model Training</li>
                 <li><strong>Concepts:</strong> Data Structures, Object-Oriented Programming, DBMS</li>
-                <li><strong>Tools & Platforms:</strong> VS Code, Google Colab, IDLE (Python)</li>
               </ul>
             </div>
 
             {/* Projects */}
-            <div className="space-y-3">
-              <h2 className="text-xs font-bold text-blue-900 uppercase tracking-wide border-b border-blue-900 pb-0.5">
+            <div className="space-y-2.5">
+              <h2 className="text-xs font-bold text-gray-900 uppercase tracking-wide border-b border-gray-900 pb-0.5">
                 PROJECTS
               </h2>
 
               {/* Project 1 */}
-              <div className="space-y-1">
+              <div className="space-y-0.5">
                 <div className="flex justify-between text-xs font-bold text-gray-900">
                   <span>Employee Onboarding & Document Checklist Automation</span>
-                  <span className="text-gray-600 font-normal text-[11px]">2026</span>
+                  <span className="text-gray-800 font-normal text-[11px]">2026</span>
                 </div>
                 <ul className="list-disc list-inside space-y-0.5 text-[11px] text-gray-800 pl-1">
                   <li>Developed an Employee Onboarding and Document Checklist system using Django, React, and PostgreSQL.</li>
@@ -142,10 +150,10 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               </div>
 
               {/* Project 2 */}
-              <div className="space-y-1">
+              <div className="space-y-0.5">
                 <div className="flex justify-between text-xs font-bold text-gray-900">
                   <span>ToxiGuard — AI-Based Comment Moderation System</span>
-                  <span className="text-gray-600 font-normal text-[11px]">2026</span>
+                  <span className="text-gray-800 font-normal text-[11px]">2026</span>
                 </div>
                 <ul className="list-disc list-inside space-y-0.5 text-[11px] text-gray-800 pl-1">
                   <li>Built a real-time comment moderation system using React for frontend and Django/Flask for backend.</li>
@@ -158,10 +166,11 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
             {/* Certifications */}
             <div className="space-y-1">
-              <h2 className="text-xs font-bold text-blue-900 uppercase tracking-wide border-b border-blue-900 pb-0.5">
+              <h2 className="text-xs font-bold text-gray-900 uppercase tracking-wide border-b border-gray-900 pb-0.5">
                 CERTIFICATIONS
               </h2>
               <ul className="list-disc list-inside space-y-0.5 text-[11px] text-gray-800 pt-1 pl-1">
+                <li>Python Programming Internship Certificate – CodSoft</li>
                 <li>Artificial Intelligence Internship Certificate – CodeAlpha</li>
                 <li>Software Development Job Simulation – Datacom (Issued by Forage)</li>
                 <li>Full Stack Development Internship Certificate – Nova Spark Hub</li>
@@ -170,13 +179,13 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
             {/* Education */}
             <div className="space-y-1">
-              <h2 className="text-xs font-bold text-blue-900 uppercase tracking-wide border-b border-blue-900 pb-0.5">
+              <h2 className="text-xs font-bold text-gray-900 uppercase tracking-wide border-b border-gray-900 pb-0.5">
                 EDUCATION
               </h2>
               <div className="space-y-0.5 pt-1">
                 <div className="flex flex-col sm:flex-row justify-between text-xs font-bold text-gray-900">
                   <span>Alpha College of Engineering <span className="font-normal text-gray-800">— B.E., Computer Science and Engineering</span></span>
-                  <span className="text-gray-600 font-normal text-[11px]">2022 – 2026 | Chennai</span>
+                  <span className="text-gray-800 font-normal text-[11px]">2022 – 2026 | Chennai</span>
                 </div>
                 <div className="text-[11px] font-bold text-gray-900">
                   CGPA: 8.0 / 10
@@ -184,14 +193,22 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               </div>
             </div>
 
-            {/* Languages */}
+            {/* Portfolio */}
             <div className="space-y-1">
-              <h2 className="text-xs font-bold text-blue-900 uppercase tracking-wide border-b border-blue-900 pb-0.5">
-                LANGUAGES
+              <h2 className="text-xs font-bold text-gray-900 uppercase tracking-wide border-b border-gray-900 pb-0.5">
+                PORTFOLIO
               </h2>
               <ul className="list-disc list-inside space-y-0.5 text-[11px] text-gray-800 pt-1 pl-1">
-                <li>Tamil — Native</li>
-                <li>English — Professional working proficiency</li>
+                <li>
+                  <a
+                    href="https://personal-portfolio-ten-mu-19.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-700 hover:underline font-medium"
+                  >
+                    personal-portfolio-ten-mu-19.vercel.app
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -200,12 +217,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
         {/* Modal Footer */}
         <div className="px-6 py-3 bg-slate-900 border-t border-slate-800 flex justify-between items-center text-xs text-slate-400 shrink-0 font-mono">
           <span>Official Resume View — Lokesh P</span>
-          <button
-            onClick={onClose}
-            className="px-4 py-1.5 text-xs font-medium text-slate-300 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors"
-          >
-            Close Window
-          </button>
+          <span>A4 Document Format</span>
         </div>
       </div>
     </div>
