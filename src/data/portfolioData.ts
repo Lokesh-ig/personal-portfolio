@@ -271,7 +271,7 @@ export const PROJECTS: Project[] = [
     ],
     githubUrl: 'https://github.com/Lokesh-ig/Comment-Moderation_System',
     liveDemoUrl: 'https://comment-moderation-system-delta.vercel.app',
-    logoUrl: '/toxicguard-logo.svg',
+    logoUrl: '/toxicguard-logo.svg?v=2',
     caseStudy: {
       problem:
         'Online communities face continuous risks from toxic, aggressive, or hateful comments. Moderating content manually creates severe human resource bottlenecks and exposes human moderators to high volumes of abusive text.',
