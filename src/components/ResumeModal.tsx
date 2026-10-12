@@ -65,36 +65,48 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               </p>
             </div>
 
-            {/* Internship */}
-            <div className="space-y-3">
-              <h2 className="text-xs font-bold text-blue-900 uppercase tracking-wide border-b border-blue-900 pb-0.5">
-                INTERNSHIP
-              </h2>
+              {/* Internship */}
+              <div className="space-y-3">
+                <h2 className="text-xs font-bold text-blue-900 uppercase tracking-wide border-b border-blue-900 pb-0.5">
+                  INTERNSHIP
+                </h2>
 
-              {/* Internship 1 */}
-              <div className="space-y-1">
-                <div className="flex flex-col sm:flex-row justify-between text-xs font-bold text-gray-900">
-                  <span>Full Stack Development Intern <span className="font-semibold text-gray-800">— Nova Spark Hub</span></span>
-                  <span className="text-gray-600 font-normal text-[11px]">Jul 2025 – Aug 2025</span>
+                {/* Internship 1: CodSoft */}
+                <div className="space-y-1">
+                  <div className="flex flex-col sm:flex-row justify-between text-xs font-bold text-gray-900">
+                    <span>Python Programming Intern <span className="font-semibold text-gray-800">— CodSoft</span></span>
+                    <span className="text-gray-600 font-normal text-[11px]">Sep 2026 – Oct 2026</span>
+                  </div>
+                  <ul className="list-disc list-inside space-y-0.5 text-[11px] text-gray-800 pl-1">
+                    <li>Developed Python applications including a To-Do List task manager, Rock-Paper-Scissors game, and Contact Book application.</li>
+                    <li>Strengthened core programming, application development, and interactive software skills.</li>
+                  </ul>
                 </div>
-                <ul className="list-disc list-inside space-y-0.5 text-[11px] text-gray-800 pl-1">
-                  <li>Contributed to full-stack web development tasks, gaining hands-on experience with frontend and backend integration.</li>
-                  <li>Built and tested responsive UI components as part of a collaborative development team.</li>
-                </ul>
-              </div>
 
-              {/* Internship 2 */}
-              <div className="space-y-1">
-                <div className="flex flex-col sm:flex-row justify-between text-xs font-bold text-gray-900">
-                  <span>Artificial Intelligence Intern <span className="font-semibold text-gray-800">— CodeAlpha</span></span>
-                  <span className="text-gray-600 font-normal text-[11px]">Aug 2026 – Sep 2026</span>
+                {/* Internship 2: CodeAlpha */}
+                <div className="space-y-1">
+                  <div className="flex flex-col sm:flex-row justify-between text-xs font-bold text-gray-900">
+                    <span>Artificial Intelligence Intern <span className="font-semibold text-gray-800">— CodeAlpha</span></span>
+                    <span className="text-gray-600 font-normal text-[11px]">Aug 2026 – Sep 2026</span>
+                  </div>
+                  <ul className="list-disc list-inside space-y-0.5 text-[11px] text-gray-800 pl-1">
+                    <li>Developed two AI-based applications: a Banking FAQ Chatbot using NLP, TF-IDF, Cosine Similarity, and Flask, a Real-Time Object Detection & Tracking System using YOLO, OpenCV, and Deep SORT.</li>
+                    <li>Gained practical experience in python, Machine Learning, Natural Language Processing, Computer Vision, API development, and real-world AI application development.</li>
+                  </ul>
                 </div>
-                <ul className="list-disc list-inside space-y-0.5 text-[11px] text-gray-800 pl-1">
-                  <li>Developed two AI-based applications: a Banking FAQ Chatbot using NLP, TF-IDF, Cosine Similarity, and Flask, a Real-Time Object Detection & Tracking System using YOLO, OpenCV, and Deep SORT.</li>
-                  <li>Gained practical experience in python, Machine Learning, Natural Language Processing, Computer Vision, API development, and real-world AI application development.</li>
-                </ul>
+
+                {/* Internship 3: Nova Spark Hub */}
+                <div className="space-y-1">
+                  <div className="flex flex-col sm:flex-row justify-between text-xs font-bold text-gray-900">
+                    <span>Full Stack Development Intern <span className="font-semibold text-gray-800">— Nova Spark Hub</span></span>
+                    <span className="text-gray-600 font-normal text-[11px]">Jul 2025 – Aug 2025</span>
+                  </div>
+                  <ul className="list-disc list-inside space-y-0.5 text-[11px] text-gray-800 pl-1">
+                    <li>Contributed to full-stack web development tasks, gaining hands-on experience with frontend and backend integration.</li>
+                    <li>Built and tested responsive UI components as part of a collaborative development team.</li>
+                  </ul>
+                </div>
               </div>
-            </div>
 
             {/* Technical Skills */}
             <div className="space-y-1">

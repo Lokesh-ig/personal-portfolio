@@ -37,7 +37,7 @@ export const PERSONAL_INFO = {
 
 export const QUICK_STATS = [
   { label: 'AI / Full-Stack Projects', value: '4+', subtext: 'Built & Deployed' },
-  { label: 'Internship Experiences', value: '2+', subtext: 'Full Stack & AI' },
+  { label: 'Internship Experiences', value: '3+', subtext: 'Python, AI & Web' },
   { label: 'Primary Language', value: 'Python', subtext: 'Core Stack' },
   { label: 'Core Focus', value: 'AI + Web', subtext: 'Practical Apps' }
 ];
@@ -117,6 +117,21 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 ];
 
 export const EXPERIENCES: ExperienceItem[] = [
+  {
+    id: 'exp-codsoft',
+    role: 'Python Programming Intern',
+    company: 'CodSoft',
+    period: 'Sep 2026 – Oct 2026',
+    location: 'Remote',
+    type: 'Python Programming Internship',
+    details: [
+      'Developed Python applications to strengthen programming, problem-solving, and application development skills.',
+      'Built a To-Do List application to organize, manage, and track daily tasks efficiently.',
+      'Developed a Rock-Paper-Scissors game with random computer choices, winner determination, and interactive gameplay.',
+      'Created a Contact Book application with features to add, view, search, update, and delete contact information.'
+    ],
+    skillsUsed: ['Python', 'Tkinter', 'GitHub', 'HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'Flask', 'Django', 'MySQL']
+  },
   {
     id: 'exp-codealpha',
     role: 'Artificial Intelligence Intern',

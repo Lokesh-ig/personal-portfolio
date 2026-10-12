@@ -64,21 +64,21 @@ doc.y += 12;
 // --- INTERNSHIP ---
 drawSectionHeader('INTERNSHIP');
 
-// Internship 1
+// Internship 1: CodSoft
 const int1Y = doc.y;
-doc.fillColor(darkText).fontSize(9.5).font('Helvetica-Bold').text('Full Stack Development Intern — Nova Spark Hub', leftMargin, int1Y);
-doc.fillColor(grayText).fontSize(9).font('Helvetica').text('Jul 2025 – Aug 2025', leftMargin, int1Y, {
+doc.fillColor(darkText).fontSize(9.5).font('Helvetica-Bold').text('Python Programming Intern — CodSoft', leftMargin, int1Y);
+doc.fillColor(grayText).fontSize(9).font('Helvetica').text('Sep 2026 – Oct 2026', leftMargin, int1Y, {
   align: 'right',
   width: contentWidth
 });
 doc.y = int1Y + 13;
 
 doc.fillColor(bodyText).fontSize(9).font('Helvetica');
-doc.text('•  Contributed to full-stack web development tasks, gaining hands-on experience with frontend and backend integration.', leftMargin + 8, doc.y, { width: contentWidth - 8, lineGap: 2 });
-doc.text('•  Built and tested responsive UI components as part of a collaborative development team.', leftMargin + 8, doc.y, { width: contentWidth - 8, lineGap: 2 });
+doc.text('•  Developed Python applications including To-Do List task manager, Rock-Paper-Scissors game, and Contact Book application.', leftMargin + 8, doc.y, { width: contentWidth - 8, lineGap: 2 });
+doc.text('•  Strengthened programming, problem-solving, and application development skills.', leftMargin + 8, doc.y, { width: contentWidth - 8, lineGap: 2 });
 doc.y += 8;
 
-// Internship 2
+// Internship 2: CodeAlpha
 const int2Y = doc.y;
 doc.fillColor(darkText).fontSize(9.5).font('Helvetica-Bold').text('Artificial Intelligence Intern — CodeAlpha', leftMargin, int2Y);
 doc.fillColor(grayText).fontSize(9).font('Helvetica').text('Aug 2026 – Sep 2026', leftMargin, int2Y, {
@@ -90,7 +90,21 @@ doc.y = int2Y + 13;
 doc.fillColor(bodyText).fontSize(9).font('Helvetica');
 doc.text('•  Developed two AI-based applications: a Banking FAQ Chatbot using NLP, TF-IDF, Cosine Similarity, and Flask, a Real-Time Object Detection & Tracking System using YOLO, OpenCV, and Deep SORT.', leftMargin + 8, doc.y, { width: contentWidth - 8, lineGap: 2 });
 doc.text('•  Gained practical experience in python, Machine Learning, Natural Language Processing, Computer Vision, API development, and real-world AI application development.', leftMargin + 8, doc.y, { width: contentWidth - 8, lineGap: 2 });
-doc.y += 12;
+doc.y += 8;
+
+// Internship 3: Nova Spark Hub
+const int3Y = doc.y;
+doc.fillColor(darkText).fontSize(9.5).font('Helvetica-Bold').text('Full Stack Development Intern — Nova Spark Hub', leftMargin, int3Y);
+doc.fillColor(grayText).fontSize(9).font('Helvetica').text('Jul 2025 – Aug 2025', leftMargin, int3Y, {
+  align: 'right',
+  width: contentWidth
+});
+doc.y = int3Y + 13;
+
+doc.fillColor(bodyText).fontSize(9).font('Helvetica');
+doc.text('•  Contributed to full-stack web development tasks, gaining hands-on experience with frontend and backend integration.', leftMargin + 8, doc.y, { width: contentWidth - 8, lineGap: 2 });
+doc.text('•  Built and tested responsive UI components as part of a collaborative development team.', leftMargin + 8, doc.y, { width: contentWidth - 8, lineGap: 2 });
+doc.y += 10;
 
 // --- TECHNICAL SKILLS ---
 drawSectionHeader('TECHNICAL SKILLS');
