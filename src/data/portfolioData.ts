@@ -36,7 +36,7 @@ export const PERSONAL_INFO = {
 };
 
 export const QUICK_STATS = [
-  { label: 'AI / Full-Stack Projects', value: '3+', subtext: 'Built & Deployed' },
+  { label: 'AI / Full-Stack Projects', value: '4+', subtext: 'Built & Deployed' },
   { label: 'Internship Experiences', value: '2+', subtext: 'Full Stack & AI' },
   { label: 'Primary Language', value: 'Python', subtext: 'Core Stack' },
   { label: 'Core Focus', value: 'AI + Web', subtext: 'Practical Apps' }
@@ -153,6 +153,101 @@ export const EXPERIENCES: ExperienceItem[] = [
 // PROJECTS DATA & REPOSITORY URLS
 // =============================================================
 export const PROJECTS: Project[] = [
+  {
+    id: 'spice-market',
+    title: 'Spice Market',
+    subtitle: 'Single-Origin Artisanal Spice & Dispatch Architecture',
+    category: 'Full-Stack',
+    featured: true,
+    description:
+      'Engineered a high-performance e-commerce platform pairing a dark-glassmorphism storefront with a Django REST API and cloud MySQL (TiDB Cloud).',
+    problem:
+      'Traditional spice commerce lacks provenance verification, exposes consumers to adulteration, and fails to handle dynamic multi-weight tier pricing. Furthermore, e-commerce checkout flows frequently lack automated weight-tiered logistics calculation.',
+    solution:
+      'Engineered a high-performance web platform pairing a dark-glassmorphism storefront with a Django REST API and cloud MySQL (TiDB). Features real-time multi-weight switching (100g to 5kg), dynamic weight-tier courier tariff calculation (₹50 under 1kg / free on 1kg+), and guest checkout protection with Google OAuth integration.',
+    technologies: [
+      'Django 5',
+      'Django REST Framework',
+      'Python 3.10',
+      'MySQL (TiDB Cloud)',
+      'JavaScript ES6+',
+      'Bootstrap 5',
+      'Gunicorn',
+      'WhiteNoise',
+      'Render PaaS'
+    ],
+    features: [
+      'Real-time multi-weight tier switching (100g to 5kg) with dynamic price calculation',
+      'Automated weight-tier courier tariff engine (₹50 under 1kg / free on 1kg+)',
+      'Dark-glassmorphism storefront with responsive cart management',
+      'Guest checkout protection & Google OAuth integration',
+      'Django REST Framework API validation & health endpoints',
+      'TiDB Cloud MySQL transaction management with connection pooling'
+    ],
+    githubUrl: 'https://github.com/Lokesh-ig/Spice-Market',
+    liveDemoUrl: 'https://spice-market.onrender.com',
+    logoUrl: '/spice-market-logo.svg',
+    caseStudy: {
+      problem:
+        'Traditional spice commerce lacks provenance verification, exposes consumers to adulteration, and fails to handle dynamic multi-weight tier pricing. Furthermore, e-commerce checkout flows frequently lack automated weight-tiered logistics calculation.',
+      approach:
+        'Designed a decoupled e-commerce architecture pairing a responsive dark-glass storefront with a Django REST Framework API and TiDB Cloud MySQL database, optimized for high concurrency with Gunicorn and WhiteNoise on Render.',
+      architectureDescription:
+        'Client interacts with dark-glass cart and weight selectors; Dynamic Weight & Tariff Engine calculates totals and sends payload to Django REST API; endpoints validate transactions against TiDB Cloud MySQL; order dispatch generates verified receipt manifests.',
+      architectureSteps: [
+        {
+          step: 1,
+          title: 'Client Cart & Pack Selection',
+          description: 'Selects spices, dynamic weight variant from 100g to 5kg, and quantity.',
+          type: 'input'
+        },
+        {
+          step: 2,
+          title: 'Dynamic Weight & Tariff Engine',
+          description: 'Calculates item prices and dynamic courier tariffs (₹50 under 1kg / free on 1kg+).',
+          type: 'service'
+        },
+        {
+          step: 3,
+          title: 'Django REST API Validation',
+          description: 'Validates cart payload, checks stock thresholds, and sanitizes checkout data.',
+          type: 'service'
+        },
+        {
+          step: 4,
+          title: 'TiDB Cloud MySQL Transaction',
+          description: 'Executes atomic database transactions and persists order records with connection pooling.',
+          type: 'model'
+        },
+        {
+          step: 5,
+          title: 'Order Dispatch & Manifest',
+          description: 'Generates verified order confirmation, digital manifest, and updates inventory.',
+          type: 'output'
+        }
+      ],
+      technologiesUsed: [
+        { category: 'Frontend', stack: ['Bootstrap 5', 'JavaScript ES6+', 'HTML5', 'CSS3 Glassmorphism'] },
+        { category: 'Backend Engine', stack: ['Python 3.10', 'Django 5', 'Django REST Framework'] },
+        { category: 'Database & Cloud', stack: ['MySQL', 'TiDB Cloud', 'Connection Pooling'] },
+        { category: 'Deployment & Hosting', stack: ['Render PaaS', 'Gunicorn', 'WhiteNoise', 'Git'] }
+      ],
+      keyFeatures: [
+        'Dynamic weight variant selection (100g, 250g, 500g, 1kg, 5kg) with instant recalculation.',
+        'Automated weight-tier logistics and courier fee calculation.',
+        'Decoupled REST API with dedicated /api/health/ diagnostics endpoint.',
+        'Secure guest checkout protection with Google OAuth session support.'
+      ],
+      challengesAndSolutions: [
+        {
+          challenge: 'Handling dynamic pricing and shipping calculation across multi-item orders without stale cart states or race conditions.',
+          solution: 'Engineered atomic server-side validation in Django REST Framework to re-compute weights and shipping tariffs on checkout submission.'
+        }
+      ],
+      outcome:
+        'Successfully deployed a production-grade single-origin spice e-commerce storefront on Render with TiDB Cloud MySQL database integration.'
+    }
+  },
   {
     id: 'toxiguard',
     title: 'ToxiGuard',
