@@ -21,12 +21,12 @@ export const Certifications: React.FC = () => {
           <div className="w-12 h-1 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-full mt-3" />
         </div>
 
-        {/* Certificate Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        {/* Certificate Cards Grid - Balanced 2x2 Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {CERTIFICATIONS.map((cert, idx) => (
             <div
               key={cert.id}
-              className="bg-[#0f172a] border border-slate-800/80 p-6 rounded-2xl glass-panel glass-panel-hover flex flex-col justify-between space-y-4"
+              className="bg-[#0f172a] border border-slate-800/80 p-6 sm:p-7 rounded-2xl glass-panel glass-panel-hover flex flex-col justify-between h-full space-y-4"
             >
               <div className="space-y-3">
                 {/* Header Badge */}
