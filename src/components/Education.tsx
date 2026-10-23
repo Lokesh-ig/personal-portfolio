@@ -4,7 +4,7 @@ import { GraduationCap, MapPin, Calendar } from 'lucide-react';
 
 export const Education: React.FC = () => {
   return (
-    <section className="py-16 relative bg-grid-pattern">
+    <section id="education" className="py-20 relative bg-grid-pattern">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-12">
